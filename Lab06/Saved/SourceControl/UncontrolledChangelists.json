@@ -1,0 +1,26 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/castle_guard_01.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/castle_guard_01_Anim.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/castle_guard_01_PhysicsAsset.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/castle_guard_01_Skeleton.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Run_Forward.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Run_Forward_Anim.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Run_Forward_PhysicsAsset.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Walk.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Walk_Anim.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Drunk_Walk_PhysicsAsset.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Guard_02.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Guard_02__diffuse.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Guard_02__normal.uasset",
+				"C:/Users/cdw26/Documents/GitHub/Lab06/Lab06/Content/Characters/Guard_02__specular.uasset"
+			]
+		}
+	]
+}
