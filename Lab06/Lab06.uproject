@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{4631BDA4-49AA-CA94-260A-C89D26972820}",
+	"EngineAssociation": "{AF4F2110-4533-6D39-E2CB-13A4910235AC}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "Lab06",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [

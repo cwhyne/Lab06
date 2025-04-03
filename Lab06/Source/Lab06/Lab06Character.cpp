@@ -18,6 +18,11 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 ALab06Character::ALab06Character()
 {
+
+	static ConstructorHelpers::FObjectFinder<UInputAction>InputActionAsset(TEXT("/Game/ThirdPerson/Input/Actions/IA_Sprint"));
+	if (InputActionAsset.Succeeded())
+		SprintAction = InputActionAsset.Object;
+	
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 		
@@ -39,6 +44,9 @@ ALab06Character::ALab06Character()
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 
+	WalkSpeed = 200.f;
+	SprintSpeed = 500.f;
+
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
@@ -52,6 +60,7 @@ ALab06Character::ALab06Character()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -85,6 +94,9 @@ void ALab06Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ALab06Character::Look);
+
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &ALab06Character::StartSprint); // for when shift is pressed
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ALab06Character::StopSprint); // for when shift is released
 	}
 	else
 	{
@@ -127,3 +139,8 @@ void ALab06Character::Look(const FInputActionValue& Value)
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
+
+void ALab06Character::BeginPlay() { Super::BeginPlay(); GetCharacterMovement()->MaxWalkSpeed = WalkSpeed; }
+void ALab06Character::StartSprint() { GetCharacterMovement()->MaxWalkSpeed = SprintSpeed; }
+void ALab06Character::StopSprint() { GetCharacterMovement()->MaxWalkSpeed = WalkSpeed; }
+
