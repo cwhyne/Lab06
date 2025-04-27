@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab06ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57fdb8237db6de48c1bf082b8f069cffe101baec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac004432a3742cc3fac13402d5d388953f025661")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab06ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab06ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

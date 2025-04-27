@@ -60,5 +60,11 @@
     <ClCompile Include="..\..\Source\Lab06\Lab06GameMode.h">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyUserWidget.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyUserWidget.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
