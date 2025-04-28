@@ -13,5 +13,5 @@ UCLASS()
 class LAB06_API UMyUserWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	//ahhhhhhhhhhhhh
+	
 };

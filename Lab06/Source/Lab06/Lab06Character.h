@@ -11,6 +11,7 @@ class USpringArmComponent;
 class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
+class UMyUserWidget;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -47,6 +48,11 @@ class ALab06Character : public ACharacter
 public:
 	ALab06Character();
 	
+	UPROPERTY()
+	UMyUserWidget* HUD;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+	TSubclassOf<UMyUserWidget> widgetClass;
 
 protected:
 

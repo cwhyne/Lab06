@@ -9,6 +9,7 @@
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "MyUserWidget.h"
 #include "InputActionValue.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -140,7 +141,17 @@ void ALab06Character::Look(const FInputActionValue& Value)
 	}
 }
 
-void ALab06Character::BeginPlay() { Super::BeginPlay(); GetCharacterMovement()->MaxWalkSpeed = WalkSpeed; }
+void ALab06Character::BeginPlay() 
+{ 
+	Super::BeginPlay(); GetCharacterMovement()->MaxWalkSpeed = WalkSpeed; 
+
+	if (widgetClass) {
+		HUD = CreateWidget<UMyUserWidget>(GetWorld(), widgetClass);
+		if (HUD) {
+			HUD->AddToViewport();
+		}
+	}
+}
 void ALab06Character::StartSprint() { GetCharacterMovement()->MaxWalkSpeed = SprintSpeed; }
 void ALab06Character::StopSprint() { GetCharacterMovement()->MaxWalkSpeed = WalkSpeed; }
 

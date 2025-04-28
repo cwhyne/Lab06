@@ -39,6 +39,12 @@
     <ClCompile Include="..\..\Source\Lab06\AMyCharacter.h">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\AMyPickup.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\AMyPickup.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
     <None Include="..\..\Source\Lab06\Lab06.Build.cs">
       <Filter>Source\Lab06</Filter>
     </None>
