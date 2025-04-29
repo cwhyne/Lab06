@@ -66,6 +66,18 @@
     <ClCompile Include="..\..\Source\Lab06\Lab06GameMode.h">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyCoins.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyCoins.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyTreasure.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyTreasure.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Lab06\MyUserWidget.cpp">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
