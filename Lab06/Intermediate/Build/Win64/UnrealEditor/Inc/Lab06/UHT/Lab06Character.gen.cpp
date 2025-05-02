@@ -108,8 +108,14 @@ struct Z_Construct_UClass_ALab06Character_Statics
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HUD_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Widget functionality\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Lab06Character.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Widget functionality" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_widgetClass_MetaData[] = {
 		{ "Category", "UI" },
@@ -212,10 +218,10 @@ ALab06Character::~ALab06Character() {}
 struct Z_CompiledInDeferFile_FID_Users_cdw26_Documents_GitHub_Lab06_Lab06_Source_Lab06_Lab06Character_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ALab06Character, ALab06Character::StaticClass, TEXT("ALab06Character"), &Z_Registration_Info_UClass_ALab06Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALab06Character), 4212160538U) },
+		{ Z_Construct_UClass_ALab06Character, ALab06Character::StaticClass, TEXT("ALab06Character"), &Z_Registration_Info_UClass_ALab06Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALab06Character), 815104139U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_cdw26_Documents_GitHub_Lab06_Lab06_Source_Lab06_Lab06Character_h_3374582707(TEXT("/Script/Lab06"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_cdw26_Documents_GitHub_Lab06_Lab06_Source_Lab06_Lab06Character_h_702521372(TEXT("/Script/Lab06"),
 	Z_CompiledInDeferFile_FID_Users_cdw26_Documents_GitHub_Lab06_Lab06_Source_Lab06_Lab06Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_cdw26_Documents_GitHub_Lab06_Lab06_Source_Lab06_Lab06Character_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

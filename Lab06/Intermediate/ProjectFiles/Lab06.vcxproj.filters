@@ -72,6 +72,18 @@
     <ClCompile Include="..\..\Source\Lab06\MyCoins.h">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyKey1.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyKey1.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyKeyWin.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyKeyWin.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Lab06\MyTreasure.cpp">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
@@ -82,6 +94,12 @@
       <Filter>Source\Lab06</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Lab06\MyUserWidget.h">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyUserWidget2.cpp">
+      <Filter>Source\Lab06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Lab06\MyUserWidget2.h">
       <Filter>Source\Lab06</Filter>
     </ClCompile>
   </ItemGroup>

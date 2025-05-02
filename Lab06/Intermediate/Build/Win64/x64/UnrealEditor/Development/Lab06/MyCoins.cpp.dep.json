@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\cdw26\\documents\\github\\lab06\\lab06\\source\\lab06\\mycoins.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\cdw26\\documents\\github\\lab06\\lab06\\intermediate\\build\\win64\\x64\\lab06editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\cdw26\\documents\\github\\lab06\\lab06\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\lab06\\definitions.lab06.h",
+            "c:\\users\\cdw26\\documents\\github\\lab06\\lab06\\source\\lab06\\mycoins.h",
+            "c:\\users\\cdw26\\documents\\github\\lab06\\lab06\\intermediate\\build\\win64\\unrealeditor\\inc\\lab06\\uht\\mycoins.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

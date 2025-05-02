@@ -96,6 +96,7 @@ void ALab06Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ALab06Character::Look);
 
+		//Sprinting
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &ALab06Character::StartSprint); // for when shift is pressed
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ALab06Character::StopSprint); // for when shift is released
 	}

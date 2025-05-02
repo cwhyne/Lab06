@@ -16,6 +16,11 @@ void AMyCoins::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//finds the sphere mesh and adds the sphere mesh to the key
+	//makes the sphere mesh have overlap 
+	SphereMesh = FindComponentByClass<UStaticMeshComponent>();
+	SphereMesh->OnComponentBeginOverlap.AddDynamic(this, &AMyCoins::OnOverlapBegin);
+	SphereMesh->SetGenerateOverlapEvents(true);
 }
 
 // Called every frame
@@ -25,3 +30,10 @@ void AMyCoins::Tick(float DeltaTime)
 
 }
 
+void AMyCoins::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+	
+	//UE_LOG(LogTemp, Warning, TEXT("COLLISION DETECTED"));
+
+	//destroys the actor
+	this->Destroy();
+}

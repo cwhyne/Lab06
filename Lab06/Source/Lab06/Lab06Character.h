@@ -48,6 +48,7 @@ class ALab06Character : public ACharacter
 public:
 	ALab06Character();
 	
+	//Widget functionality
 	UPROPERTY()
 	UMyUserWidget* HUD;
 
